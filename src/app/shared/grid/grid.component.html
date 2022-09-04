@@ -1,0 +1,13 @@
+<table class="table">
+    <thead>
+        <th *ngFor="let col of gridColumns">
+            <a [routerLink]="[]" (click)="sortData(col)"> {{col}}</a>
+        </th>
+        <th>Action</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let row of gridData">
+            <td *ngFor="let col of gridColumns">{{row[col]}}</td>
+        </tr>
+    </tbody>
+</table>

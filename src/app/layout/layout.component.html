@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <a [routerLink]="['/']">Home</a> &nbsp; &nbsp; | &nbsp;&nbsp;
+            <a [routerLink]="['/customer']">Customer</a> &nbsp; &nbsp; | &nbsp;&nbsp;
+            <a [routerLink]="['/employee']">Employee</a> &nbsp; &nbsp; | &nbsp;&nbsp;
+            <a [routerLink]="['/employee/post']">Posts</a> &nbsp; &nbsp; | &nbsp;&nbsp;
+            <a [routerLink]="['/customer/users']">users</a> &nbsp; &nbsp; | &nbsp;&nbsp;
+            <a [routerLink]="['/employee/demo']">demo</a>  
+
+        </div>
+    </div>
+    <div class="row" style="min-height: 600px;">
+        <div class="col-12">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            Designed By : Krishna
+        </div>
+    </div>
+</div>
